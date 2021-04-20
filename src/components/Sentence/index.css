@@ -1,0 +1,13 @@
+.sentence {
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+}
+.sentence:first-child{
+  padding-left: 50px;
+}
+
+.sentence:last-child :last-child{
+  display: none;
+}

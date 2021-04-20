@@ -1,0 +1,9 @@
+.optionsList {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  border: 1px solid rgb(234, 236, 234);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

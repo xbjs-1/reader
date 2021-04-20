@@ -7,16 +7,12 @@ export default class Blank extends Component {
     option: null
   }
 
-  componentDidUpdate(preProps, preState) {
-    // console.log(preProps.checking);
-    return null;
-  }
-
   handleFocus = (event) => {
     this.props.changeChecking(true);
     if (event.target.placeholder) {
       this.props.deleteChecked(this.state.option);
       event.target.placeholder = '';
+      this.setState({option: null})
     }
   }
   handleBlur = (event) => {
